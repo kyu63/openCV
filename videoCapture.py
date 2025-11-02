@@ -9,7 +9,6 @@ while True:
     #cap.read() = it reads  one frame from the video
     #also return two value first one is boolean(true/false) show wheather image/frame was succussfully read or not
     #second one is numpy array the actual image frame captured from the video/wedcaom
-    print(frame)
 
     if not ret:
         print("failed to load")
