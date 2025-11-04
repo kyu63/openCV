@@ -24,7 +24,7 @@ while True:
     smile = smile_cascade.detectMultiScale(roi_gray, 1.7, 10)
     if len(smile):
         cv2.putText(frame, "smile detected", (x,y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,255,0), 2)
-
+    cv2.namedWindow("gray webcam", cv2.WINDOW_NORMAL)
     cv2.imshow("gray webcam", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
